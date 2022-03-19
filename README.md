@@ -1,10 +1,16 @@
 ## Template Repository
 
+---
+
 ## Step 1: Open Terminal in Visual Studio Code (Press: Ctrl + `)
 
     npm init
 
+---
+
 ## Step 2: Input information such as version, description and keywords
+
+---
 
 ## Step 3: Install Node.js frameworks
 
@@ -27,9 +33,10 @@
     npm install -g gulp
     npm install jquery
 
-## Step 3: Commit to Repository by using these commands
+---
 
-## This is just a sample
+## Step 3: Commit to Repository by using these commands
+# This is just a sample
 
     <!-- echo "# brainstorm-bin" >> README.md -->
     <!-- git init -->
@@ -41,7 +48,7 @@
 
 ---
 
-# Install Extensions for Visual Studio Code
+## Step 4: Install Extensions for Visual Studio Code
 
     Gulp Tasks: Nick Dodd
     Live Server: Ritwick Dey
@@ -66,7 +73,8 @@
 
 ---
 
-# Ignore local content in Visual Studio Code (File -> Preferences -> Settings => Search: Exclude)
+## Ignore local content in Visual Studio Code
+# File -> Preferences -> Settings => Search: Exclude)
 
 dist/_js.map
 src/_.d.ts
