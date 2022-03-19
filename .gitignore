@@ -1,17 +1,14 @@
-node_modules
-fetchjson
 types
-misc
 bin
 
+.git
+.cache
+.vscode
+
+node_modules
 src/vendors
 
 *.txt
 *.lnk
-package-lock.json
-package.json
-.git
+*.js.map
 
-~recycle
-.cache
-.vscode#
