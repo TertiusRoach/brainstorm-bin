@@ -6,6 +6,7 @@ bin
 .vscode
 
 node_modules
+package-lock.json
 src/vendors
 
 *.txt
