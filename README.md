@@ -74,11 +74,11 @@
 ---
 
 ## Ignore local content in Visual Studio Code
-# File -> Preferences -> Settings => Search: Exclude)
+# File -> Preferences -> Settings => Search: Exclude
 
-dist/_js.map
-src/_.d.ts
-dist/desktop.init
-package-lock.json
+    dist/_js.map
+    src/_.d.ts
+    dist/desktop.init
+    package-lock.json
 
 ---
