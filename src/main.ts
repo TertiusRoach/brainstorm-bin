@@ -4,6 +4,7 @@
 export namespace Start {
   //--► console.log('--main.js Loaded'); ◄--//
   // Declarations ▼ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= ◄ //
+  /*
   const indexBody: HTMLBodyElement = document.querySelector('#index-body');
   let defaultBody: HTMLElement = document.querySelector('.default-body');
 
@@ -24,10 +25,8 @@ export namespace Start {
 
   const indexData: HTMLElement = document.querySelector('#index-data');
   let defaultData: HTMLElement = document.querySelector('.default-data');
-
+  */
   // Functions ▼ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= ◄ //
-
   // Events ▼ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= ◄ //
-
   // Last ▼ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= ◄ //
 }
