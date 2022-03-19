@@ -13,6 +13,7 @@
 ---
 
 ## Step 3: Install Node.js frameworks
+# This creates a 'package-lock.json' file
 
     npm install --save-dev @gulp-sourcemaps/identity-map
     npm install --save-dev gulp-sourcemaps
@@ -36,7 +37,7 @@
 ---
 
 ## Step 3: Commit to Repository by using these commands
-# This is just a sample
+# This is a sample commit
 
     <!-- echo "# brainstorm-bin" >> README.md -->
     <!-- git init -->
@@ -50,26 +51,23 @@
 
 ## Step 4: Install Extensions for Visual Studio Code
 
-    Gulp Tasks: Nick Dodd
-    Live Server: Ritwick Dey
-    Material Icon Theme: Philipp Kief
-    Prettier - Code formatter: Prettier
-    Auto Import: steoates
-    Python: Microsoft
-    C/C++: Microsoft
-    ESLint: Microsoft
-    One Dark Pro: binaryify
-    Auto Rename Tag: Jun Han
-    Bracket Pair Colorizer: CoenraadS
-    Live Share: Microsoft
-    Quokka.js: Wallaby.js
-    Tabnine AI Autocomplete for Javascript, Python, Typescript, PHP, Go, Java, Ruby & more: TabNine
-    GitLens - Git supercharged: GitKraken
-    Code Spell Checker: Street Side Software
-    HTML CSS Support: ecmel
-    Rest Client: Huachao Mao
-    SVG Previewer: Vitalii Mazurenko
-    Atom One Dark Theme: Mahmoud Ali
+    --Tabnine AI Autocomplete for Javascript, Python, Typescript, PHP, Go, Java, Ruby & more: TabNine
+    --Code Spell Checker: Street Side Software
+    --GitLens - Git supercharged: GitKraken
+    --Prettier - Code formatter: Prettier
+    --Bracket Pair Colorizer: CoenraadS
+    --Material Icon Theme: Philipp Kief
+    --Auto Rename Tag: Jun Han
+    --Live Server: Ritwick Dey
+    --One Dark Pro: binaryify
+    --Gulp Tasks: Nick Dodd
+    --Auto Import: steoates
+    --Live Share: Microsoft
+    --Quokka.js: Wallaby.js
+    --ESLint: Microsoft
+    --Python: Microsoft    
+    --C/C++: Microsoft
+
 
 ---
 

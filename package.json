@@ -27,7 +27,7 @@
     "@angular/cli": "^13.3.0",
     "@gulp-sourcemaps/identity-map": "^2.0.1",
     "@types/jquery": "^3.5.14",
-    "fs": "^0.0.1-security",
+    "fs": "0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-npm-dist": "^1.0.3",
     "gulp-rename": "^2.0.0",
