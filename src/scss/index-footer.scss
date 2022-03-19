@@ -1,0 +1,34 @@
+@import 'colors.scss';
+/*--|►| #index-footer <footer> |◄|--*/
+#index-footer {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  width: 100%;
+  z-index: 1;
+
+  // display: grid;
+  grid-template-columns: 80px repeat(3, 1fr) 80px;
+  grid-template-rows: 40px;
+
+  background: $primary-dark;
+  /*
+  @media only screen and (max-width: 1920px) {
+  }
+  @media only screen and (max-width: 1366px) {
+  }
+  @media only screen and (max-width: 1024px) {
+  }
+  */
+}
+/*--▼ .default-footer ▼--*/
+.default-footer {
+  background: $primary-dark;
+  /*
+  @media only screen and (max-width: 1920px) {
+  }
+  @media only screen and (max-width: 1366px) {
+  }
+  @media only screen and (max-width: 1024px) {
+  }
+  */
+}

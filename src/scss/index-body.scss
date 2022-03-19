@@ -1,0 +1,36 @@
+@import 'colors.scss';
+/*--|►| #index-body <body> |◄|--*/
+* {
+  font-family: 'Baloo Bhai 2', arial;
+  padding: 0;
+  margin: 0;
+}
+#index-body {
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: 80px 1fr 80px;
+  grid-template-rows: 40px 1fr 40px;
+
+  background: $primary-light;
+  /*
+  @media only screen and (max-width: 1920px) {
+  }
+  @media only screen and (max-width: 1366px) {
+  }
+  @media only screen and (max-width: 1024px) {
+  }
+  */
+}
+/*--▼ .default-body ▼--*/
+.default-body {
+  background: $primary-light;
+  /*
+  @media only screen and (max-width: 1920px) {
+  }
+  @media only screen and (max-width: 1366px) {
+  }
+  @media only screen and (max-width: 1024px) {
+  }
+  */
+}
