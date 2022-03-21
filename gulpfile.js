@@ -63,15 +63,40 @@ exports.copyHTML = function (callback) {
   gulp.src(Source + '/**/*.html').pipe(distHtml);
   callback();
 };
+
 exports.copyProjects = function (callback) {
-  const distProjects = gulp.dest(distFolderName + 'projects/');
-  const srcProjects = 'src/projects';
+  let copySass = () => {
+    gulp
+      .src('src/projects/**/*.scss')
+      .pipe(sass())
+      .pipe(
+        rename(function (path) {
+          path.dirname = '/projects/' + path.dirname;
+        })
+      )
+      .pipe(distFolder);
+  };
+  let copyHtml = () => {
+    const distHtml = gulp.dest(distFolderName + 'projects/');
+    let Source = 'src/projects/';
 
-  gulp.src(srcProjects + '/**/*').pipe(distProjects);
-  callback();
+    gulp.src(Source + '/**/*.html').pipe(distHtml);
+    callback();
+  };
+  copyJavaScript = () => {
+    const distProjects = gulp.dest(distFolderName + 'projects/');
+    const srcProjects = 'src/projects';
+
+    gulp.src(srcProjects + '/**/*.js').pipe(distProjects);
+    callback();
+  };
+
+  copySass();
+  copyHtml();
+  copyJavaScript();
 };
-
 /*-----------------------------------*/
+
 /*
 exports.copyTS = function (callback) {
   const typesRoot = gulp.dest('types/');
