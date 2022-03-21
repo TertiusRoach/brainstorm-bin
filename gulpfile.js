@@ -1,4 +1,4 @@
-var sass = require('gulp-sass')(require('sass'));
+var sassRequire = require('gulp-sass')(require('sass'));
 const gsmaps = require('gulp-sourcemaps');
 const gts = require('gulp-typescript');
 var npmDist = require('gulp-npm-dist');
@@ -9,7 +9,7 @@ const gulp = require('gulp');
 const distFolderName = 'dist/';
 const distFolder = gulp.dest(distFolderName);
 
-exports.copyTS = function (callback) {
+exports.Compile_TypeScript = function (callback) {
   const typesRoot = gulp.dest('types/');
 
   const tsResult = () => {
@@ -44,10 +44,10 @@ exports.copyTS = function (callback) {
 
   callback();
 };
-exports.copySCSS = function (callback) {
+exports.Compile_Sass = function (callback) {
   gulp
     .src('src/scss/**/*.scss')
-    .pipe(sass())
+    .pipe(sassRequire())
     .pipe(
       rename(function (path) {
         path.dirname = '/css/' + path.dirname;
@@ -56,7 +56,8 @@ exports.copySCSS = function (callback) {
     .pipe(distFolder);
   callback();
 };
-exports.copyHTML = function (callback) {
+
+exports.Copy_HTML = function (callback) {
   const distHtml = gulp.dest(distFolderName + 'html/');
   let Source = 'src/html';
 
@@ -64,23 +65,19 @@ exports.copyHTML = function (callback) {
   callback();
 };
 
-exports.copyProjects = function (callback) {
-  let copySass = () => {
-    gulp
-      .src('src/projects/**/*.scss')
-      .pipe(sass())
-      .pipe(
-        rename(function (path) {
-          path.dirname = '/projects/' + path.dirname;
-        })
-      )
-      .pipe(distFolder);
-  };
+exports.Copy_Projects = function (callback) {
   let copyHtml = () => {
     const distHtml = gulp.dest(distFolderName + 'projects/');
     let Source = 'src/projects/';
 
     gulp.src(Source + '/**/*.html').pipe(distHtml);
+    callback();
+  };
+  copyCSS = () => {
+    const distProjects = gulp.dest(distFolderName + 'projects/');
+    const srcProjects = 'src/projects';
+
+    gulp.src(srcProjects + '/**/*.css').pipe(distProjects);
     callback();
   };
   copyJavaScript = () => {
@@ -91,8 +88,8 @@ exports.copyProjects = function (callback) {
     callback();
   };
 
-  copySass();
   copyHtml();
+  copyCSS();
   copyJavaScript();
 };
 /*-----------------------------------*/
