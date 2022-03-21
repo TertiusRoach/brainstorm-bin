@@ -1,5 +1,6 @@
-"use strict";
-//--|▼| Tools (Import) |▼|--//
-exports.__esModule = true;
+define(["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+});
 
 //# sourceMappingURL=dist/main.js.map

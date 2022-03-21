@@ -12,7 +12,8 @@
 
 ---
 
-## Step 3: Install Node.js frameworks
+## Step 3: Install Node.js frameworks: (npm Version 8.1.0)
+
 # This creates a 'package-lock.json' file
 
     npm install --save-dev @gulp-sourcemaps/identity-map
@@ -37,6 +38,7 @@
 ---
 
 ## Step 3: Commit to Repository by using these commands
+
 # This is a sample commit
 
     <!-- echo "# brainstorm-bin" >> README.md -->
@@ -52,7 +54,7 @@
 ## Step 4: Install Extensions for Visual Studio Code
 
     --Tabnine AI Autocomplete for Javascript, Python, Typescript, PHP, Go, Java, Ruby & more: TabNine
-    --Code Spell Checker: Street Side Software
+    <!-- --Code Spell Checker: Street Side Software (Optional) -->
     --GitLens - Git supercharged: GitKraken
     --Prettier - Code formatter: Prettier
     --Bracket Pair Colorizer: CoenraadS
@@ -65,17 +67,18 @@
     --Live Share: Microsoft
     --Quokka.js: Wallaby.js
     --ESLint: Microsoft
-    --Python: Microsoft    
+    --Python: Microsoft
     --C/C++: Microsoft
-
 
 ---
 
 ## Ignore local content in Visual Studio Code
+
 # File -> Preferences -> Settings => Search: Exclude
 
-    dist/*js.map
+    types
     src/*.d.ts
+    dist/**/*js.map
     dist/desktop.init
     package-lock.json
 
